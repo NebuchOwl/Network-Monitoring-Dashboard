@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+/* 
+  FRONTEND PROFESSIONAL APPROACH: 
+  Tailwind v4 'v-zero' configuration. CSS-first, modern variables.
+*/
+
+@theme {
+  /* Core Colors */
+  --color-background: hsl(222 84% 5%);
+  --color-foreground: hsl(210 40% 98%);
+  --color-border: hsl(217 33% 18%);
+  --color-input: hsl(217 33% 18%);
+  --color-ring: hsl(213 27% 84%);
+  
+  /* Brand Identity */
+  --color-primary: #3b82f6; /* Modern Blue */
+  --color-primary-foreground: #ffffff;
+  
+  --color-secondary: #1e293b;
+  --color-secondary-foreground: #f8fafc;
+  
+  --color-accent: #2dd4bf; /* Refreshing Teal */
+  --color-accent-foreground: #0f172a;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  
+  --color-muted: #334155;
+  --color-muted-foreground: #94a3b8;
+
+  /* Layout Tokens */
+  --radius-lg: 0.75rem;
+  --radius-md: calc(0.75rem - 2px);
+  --radius-sm: calc(0.75rem - 4px);
+  
+  /* Interactions */
+  --animate-spin-slow: spin 3s linear infinite;
+}
+
+@layer base {
+  *, ::after, ::before {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+/* 
+  Custom Components (Professional Utility Extraction)
+*/
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+
+  .glow-up {
+    @apply shadow-[0_0_15px_rgba(45,212,191,0.25)] transition-shadow duration-300;
+  }
+
+  .glow-down {
+    @apply shadow-[0_0_15px_rgba(239,68,68,0.25)] transition-shadow duration-300;
+  }
+}
+
+/* Custom Scrollbar (Premium Detail) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-muted/50 rounded-full hover:bg-muted transition-colors;
+}

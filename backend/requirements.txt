@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlalchemy
+aiosqlite
+icmplib
+apscheduler
+pydantic
+pydantic-settings
+python-dotenv
+emails
