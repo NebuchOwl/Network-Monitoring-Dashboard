@@ -2,7 +2,7 @@
 
 > **Modern, Fast, & Intelligent Network Monitoring Dashboard.**
 
-Net-Monitor is a professional-grade network monitoring tool designed for real-time tracking, automatic device discovery, and multi-channel alerting. Built with a sleek, premium dark-mode UI and a robust Python backend.
+Net-Monitor is a network monitoring tool designed for real-time tracking, automatic device discovery, and multi-channel alerting. Built with a sleek, premium dark-mode UI and a robust Python backend.
 
 ![Image](https://img.shields.io/badge/Status-Beta-orange)
 ![Image](https://img.shields.io/badge/Backend-FastAPI-009688)
