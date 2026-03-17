@@ -68,13 +68,12 @@ All major settings are managed through the **Dashboard > Settings** menu:
 
 - `backend/`: FastAPI application, database models, and scanning engine.
 - `frontend/`: React source code with Tailwind v4 styling.
-- `docs/`: Development plans and documentation.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the CC BY-NC License.
 
 ---
 
